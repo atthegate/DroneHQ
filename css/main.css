@@ -29,6 +29,8 @@ body, html{
 	margin-left: 10px;
 	float: left;
 	width: 15%;
+	height: 100%;
+	overflow: scroll;
 	min-width: 125px;
 }
 
