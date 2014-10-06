@@ -136,7 +136,7 @@ function object_map(){
 		var latlng = v_map.map.containerPointToLatLng(v_map.map.mouseEventToContainerPoint(evt));
 	
 		// Create popup for mission drone
-		var pu = '<b>mission Drone</b><br>Lat: ' + latlng.lat.toFixed(4) + '<br>Lng: ' + latlng.lng.toFixed(4);
+		var pu = '<b>Mission Drone</b><br>Lat: ' + latlng.lat.toFixed(4) + '<br>Lng: ' + latlng.lng.toFixed(4);
 		
 		// Create mission drone marker
 		v_map.markers.drone_mission = [
