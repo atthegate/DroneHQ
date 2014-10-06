@@ -103,13 +103,7 @@ function object_tool(){
 				drone_waypoint._latlng.lng
 			);
 			
-			// Define relative distance metric and add to array
-			// Arbirtary strength of distance between 3 interactions:
-			// - mission drone & HQ
-			// - mission drone & waypoint drone
-			// - waypoint drone & HQ 
-			
-			// Arbitrary metric
+			// Arbitrary metric of distance between mission drone, waypoint drones & HQ
 			var metric = ge0_mission2waypoint.s12 * geo_waypoint2hq.s12 / geo_mission2hq.s12;
 			
 			// Add metric value to relative distance array
