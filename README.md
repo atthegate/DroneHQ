@@ -12,4 +12,7 @@ Try It Out
 Download the zip and open the 'tool.html' file in your browser of choice. Tested in Chrome (Version 37.0.2062.124 m), IE (10.0.9200.17088, requires you to allow ActiveX though) and Firefox (32.0.3).
 
 
+DISCLAIMER
+==========
 
+The use of the SkyWard IO, Inc. logo is merely for demonstration purposes, this app is not affiliated with SkyWard IO, Inc. in any way.
