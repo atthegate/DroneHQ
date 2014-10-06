@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Demo</title>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+	
+    <link rel="shortcut icon" type="image/png" href="favicon.ico"/>
+	
+	<link rel="stylesheet" type="text/css" href="css/leaflet/leaflet.css" />
+	<link rel="stylesheet" type="text/css" href="css/main.css" />
+	<link rel="stylesheet" type="text/css" href="css/jquery-ui/jquery-ui.css" />
+	
+	<script type="text/javascript" src="js/modules/jquery.min.js"></script>
+	<script type="text/javascript" src="js/modules/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="js/modules/d3.v3.min.js"></script>
+	<script type="text/javascript" src="js/modules/geographiclib.js"></script>
+	
+	<script type="text/javascript" src="js/modules/leaflet/leaflet.js"></script>
+	<script type="text/javascript" src="js/modules/leaflet/esri-leaflet.js"></script>
+	<script type="text/javascript" src="js/modules/leaflet/L.Control.MousePosition.js"></script>
+	
+	<script type="text/javascript" src="js/tool/tool.js"></script>
+	<script type="text/javascript" src="js/tool/map.js"></script>
+	
+	<script>
+		
+		// Create main controller objects
+		var v_tool = new object_tool();
+		var v_map = new object_map();	
+		
+		// On load, initialize tool
+		$(window).load(function(){
+			v_tool.init_tool();	
+		})
+		
+    </script>
+	
+  </head>
+  	
+  <body>
+  
+	<div id="title">
+		<img src="icons/icon-skyward.png" alt="..." style="width:30px; height:30px"><b> Demo for SkyWard IO by Jon Engelsman (Oct. 6th, 2014)</b><br>
+		NOTE: Internet connection is required for map overlays!
+	</div>
+
+	<div id="tool">
+		<div id="map"></div>
+		<div id="control">
+			<b><u>Instructions</u></b>
+			<div id="drone_waypoint">
+				Input a number of drone waypoints (<span style="color: #ff0000">red</span>) and click 'Locate Waypoint Drones!' to place them randomly on the map.<br><br>
+				<span id = "icon_drone_mission" class="poi-type"><img class="drag" type="drone" src="icons/icon-drone_waypoint.png" alt="Drone" /></span><br>
+				<b>Waypoint Drones: </b><input class="input_text drone_waypoint" id="input_drone_waypoint" value=""><br>
+				<button type="button" id="btn_rdm_drone_waypoint">Locate Waypoint Drones!</button>
+			</div>
+			<div id="drone_mission">
+				Then drag and drop the mission drone (<span style="color: #309C30">green</span>) on the map at different locations.<br><br>
+				<span id = "icon_drone_mission" class="poi-type"><img class="drag" type="drone" src="icons/icon-drone_mission.png" alt="Drone" /></span><br>
+				<span><b>Mission Drone</b> (Drag/Drop)</span><br>
+			</div><br>	
+			The colored lines drawn between the mission drone and the waypoint drones indicate a somewhat arbitrary metric of relative distances between the mission and waypoint drones to the SkyWard IO HQ, where <span style="color: #ff0000">red</span> is high priority and <span style="color: #00ff00">green</span> is low priority for the mission drone to reach the waypoint drone before heading back to HQ.<br><br>
+			You can drag the <span style="color: #309C30">green</span> mission drone around the map to see different priorities assigned to the waypoints.<br><br>
+			<b>This type of visualization could be used to indicate prioritized waypoint navigation or show remaining battery life for a drone navigating through waypoints, for example.</b>
+			<button type="button" id="btn_clear_drone_all">Remove All Drones!</button>
+		</div>
+	</div>
+  </body>
+</html>

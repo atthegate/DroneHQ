@@ -1,0 +1,60 @@
+
+body, html{
+	width: 97%;
+	height: 97%;
+	min-height: 97%;
+}
+
+#title{
+	position: relative;
+	top: 0px;
+	left: 0px;
+}
+
+#tool{
+	margin-top: 5px;
+	width: 100%;
+	height: 100%;
+}
+
+#map {
+	height: 100%;
+	width: 82%;
+	float: left;
+	position: relative;
+	z-index: 0;
+}
+
+#control{
+	margin-left: 10px;
+	float: left;
+	width: 15%;
+	min-width: 125px;
+}
+
+.input_text.drone_waypoint{
+	width: 40px;
+}
+
+#drone_waypoint{
+	margin-top: 20px;
+}
+
+#drone_mission{
+	margin-top: 20px;
+}
+
+#location_drone_mission{
+	min-width: 125px;
+}
+
+.input_text.drone_mission{
+	width: 80px;
+}
+
+#btn_clear_drone_all{
+	margin-top: 30px;
+}
+
+/* ********************** */
+
