@@ -20,12 +20,12 @@ function object_tool(){
 
 			// Check that input number of waypoint drones is real number
 			if(that.isNumber(num_drone_waypoint_tmp)){
-				var num_drone_waypoint = num_drone_waypoint_tmp;
+				var num_drone_waypoint = parseInt(num_drone_waypoint_tmp);
 			}else{
 				// If not a number, default to 1
 				var num_drone_waypoint = 1;
-				$('#input_drone_waypoint').val(num_drone_waypoint);
 			}
+			$('#input_drone_waypoint').val(num_drone_waypoint);
 			
 			// Get LatLng bounds of Leaflet current zoom
 			var bounds = v_map.map.getBounds();
