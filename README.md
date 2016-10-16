@@ -19,4 +19,4 @@ Download the zip and open the 'tool.html' file in your browser of choice. Tested
 DISCLAIMER
 ==========
 
-The use of the SkyWard IO, Inc. logo is merely for demonstration purposes; this app is not affiliated with SkyWard IO, Inc. in any way.
+The use of the Skyward IO, Inc. logo is merely for demonstration purposes; this app is not affiliated with Skyward IO, Inc. in any way.
